@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>DetailProduct</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <ion-col class="ion-card" col-12 inset 
+   style="padding: 0px !important">
+    <ion-card>
+    <img *ngIf="product.image!=null"
+   src="https://ecommerce.jaroji.web.id/uploads/product/images/{{
+   product.image }}" />
+    <ion-card-content>
+    <ion-card-title>
+    {{ product.name
+   }}
+    </ion-card-title>
+    <span class="kategori" color="primary">
+    {{ product.categori_id }}
+    </span>
+    <p>
+    Rp. {{ product.price }}
+    </p>
+    </ion-card-content>
+  
+    </ion-card>
+  </ion-col>
+</ion-row>
+</ion-content>
